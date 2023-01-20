@@ -1,0 +1,16 @@
+.explore{
+    background-color: $back_explore;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    &__title{
+        margin: 0;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        font-weight: 300;
+        margin-bottom: 20px;
+        font-size: x-large;
+        color: $subtitle;
+    }
+}

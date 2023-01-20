@@ -1,0 +1,30 @@
+.header {
+  padding: 20px 0 7px 0;
+  box-shadow: 0px 8px 23px -4px #000000;
+}
+
+.subheader {
+  background-color: $back_subheader;
+  justify-content: center;
+  padding: 10px 0;
+  display: flex;
+  color: $color_subheader;
+  align-items: center;
+  &__link {
+    text-decoration: none;
+    color: #000;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  &__icon {
+    i{
+        font-size: 20px;
+        color: #000;
+    }
+  }
+}
