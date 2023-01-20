@@ -27,11 +27,14 @@ body {
   padding: 20px 0 7px 0;
   box-shadow: 0px 8px 23px -4px #000000;
 }
+.header__image {
+  width: 30%;
+}
 
 .subheader {
   background-color: #eaeaea;
   justify-content: center;
-  padding: 10px 0;
+  padding: 20px 0;
   display: flex;
   color: #353535;
   align-items: center;
@@ -69,6 +72,54 @@ body {
   color: #555555;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__title {
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+}
+.section .step {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1803921569);
+  width: 300px;
+  margin: 20px 0;
+  border-radius: 16px;
+  height: 62px;
+}
+.section .step__number {
+  padding: 5px 9px;
+  color: white;
+  background-color: #9356dc;
+  border-radius: 50%;
+  height: 17px;
+}
+.section .step__icon {
+  color: GREY;
+  font-size: 16px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.section .step__content {
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  display: flex;
+}
+.section .step__text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .btn_exp {
   background-image: linear-gradient(0deg, #9356DC 1%, #FF79DA 100%);
   border-radius: 25px;
@@ -76,6 +127,7 @@ body {
   height: 50px;
   width: 250px;
   align-items: center;
+  margin-bottom: 50px;
 }
 .btn_exp__text {
   color: #fff;
