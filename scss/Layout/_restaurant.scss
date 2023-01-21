@@ -1,0 +1,18 @@
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resto {
+
+  &__image {
+    img {
+      width: 20%;
+      height: 20%;
+      overflow: hidden;
+    }
+  }
+}
