@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   &--restaurants{
+    background-color: $back_section;
     flex-wrap: wrap;
   }
 }
