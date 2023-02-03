@@ -1,6 +1,7 @@
 @import "Base/_style";
 
 @import "Utils/_variables";
+@import"Utils/animations";
 
 @import"Layout/_body";
 @import"Layout/_header";
@@ -8,5 +9,10 @@
 @import"Layout/_section";
 @import"Layout/_step";
 @import"Layout/_restaurant";
+@import"Layout/_footer";
+@import"Layout/_main";
+@import"Layout/_box";
 
 @import"Components/_button";
+
+@import"Pages/_container";
