@@ -33,32 +33,34 @@
     &:hover .box__contents__left {
       width: calc(100% - 40px);
     }
-
-    &__title {
-      font-weight: 800;
+    &:hover .box__contents__price {
+      right: 15%;
     }
-
     &__left {
-      width: 100%;
-      padding: 0.8em;
-      position: relative;
-      box-sizing: border-box;
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
     }
     &__inline {
       display: flex;
-      padding-top: 5px;
-
-      &__subtitle {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 82%;
+      flex-direction: column;
+      text-align: left;
+      &__title {
+        padding: 5px 0px 0px 10px;
+        font-weight: 800;
+        font-size: large;
+        margin: 2px 0 2px 0;
       }
-      &__price {
-        position: absolute;
-        right: 5%;
+      &__subtitle {
+        padding: 5px 0px 0px 10px;
+        margin: 2px 0 5px 0;
       }
     }
+    &__price {
+      position: absolute;
+      right: 5%;
+    }
+
   }
 
   &__check {
@@ -66,7 +68,7 @@
     right: 0px;
     top: 0;
     width: 0px;
-    background: #99E2D0;
+    background: #99e2d0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,36 +77,35 @@
   }
 }
 
-
 /*page de détail*/
-@media (min-width: 450px) and (max-width: 767px){
-  .box{
-    &__menu{
-      &__title{
+@media (min-width: 450px) and (max-width: 767px) {
+  .box {
+    &__menu {
+      &__title {
         margin-left: auto;
         margin-right: auto;
       }
     }
-    &__element{
+    &__element {
       width: 350px;
     }
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-.box{
-  display: flex;
-  &__menu{
-    width: calc(33.3% - 2px);
-  }
-}
-}
-
-@media (min-width: 1025px){
-  .box{
+@media (min-width: 768px) and (max-width: 1024px) {
+  .box {
     display: flex;
-    &__menu{
+    &__menu {
       width: calc(33.3% - 2px);
     }
   }
+}
+
+@media (min-width: 1025px) {
+  .box {
+    display: flex;
+    &__menu {
+      width: calc(33.3% - 2px);
+    }
   }
+}
