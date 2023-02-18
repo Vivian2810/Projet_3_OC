@@ -27,8 +27,12 @@
   &__contents {
     display: flex;
     &:hover .box__check {
+      color: white;
       width: 40px;
       border-radius: 0px 10px 10px 0px;
+      i{
+        transform: rotate(0deg);
+      }
     }
     &:hover .box__contents__left {
       width: calc(100% + 40px);
@@ -71,6 +75,11 @@
     align-items: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    i{
+      color: white;
+      transform: rotate(-180deg);
+      transition: all 0.3s ease;
+    }
   }
 }
 
