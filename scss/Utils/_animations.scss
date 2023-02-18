@@ -48,7 +48,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 3px;
     font-size: 0px;
     color: #9356DC;
     font-weight: bold;
@@ -57,17 +57,17 @@
   
   /* Animation du bloc */
   
-  // @keyframes off{
-  //   from {
-  //     opacity: 20%;
-  // }
-  // to {
-  //   display: none;
-  //   opacity: 0%;
-  //   z-index: -1;
+  @keyframes off{
+    from {
+      opacity: 20%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
     
-  // }
-  // }
+  }
+  }
   
   /* Animation du bouton */
   
