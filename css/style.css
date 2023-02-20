@@ -495,6 +495,7 @@ body {
   width: 250px;
   align-items: center;
   margin: 50px 0 50px 0;
+  transition-duration: 1.5s;
 }
 .btn_exp__text {
   color: #fff;
@@ -503,9 +504,8 @@ body {
 }
 .btn_exp:hover {
   cursor: pointer;
-  opacity: 1;
-  animation: flash 1.5s;
   box-shadow: 10px 10px 36px -10px #000000;
+  background: linear-gradient(0deg, rgb(166, 130, 209) 1%, rgb(255, 158, 228) 100%);
 }
 
 /* CONTAINER DE LA PAGE DE DETAIL */
