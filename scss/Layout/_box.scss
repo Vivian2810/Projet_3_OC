@@ -15,6 +15,11 @@
     width: 92%;
     margin-top: 12px;
     box-shadow: 0 5px 16px #0000002e;
+    position: relative;
+    animation-duration: 1s;
+    animation-name: appear;
+    transform: scale(0);
+    animation-fill-mode: both;
   }
 
   &__contents {
