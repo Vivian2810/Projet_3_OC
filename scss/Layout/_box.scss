@@ -95,14 +95,6 @@
 
 /*page de détail*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .box {
-    display: flex;
-    &__menu {
-      width: calc(33.3% - 2px);
-    }
-  }
-}
 
 @media (min-width: 1025px) {
   .box {
