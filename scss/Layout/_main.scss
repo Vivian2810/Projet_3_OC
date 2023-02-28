@@ -1,30 +1,27 @@
-
 /* Page de Détail */
-
 
 .main {
   &--1 {
     background-color: whitesmoke;
     border-radius: 30px 30px 0px 0px;
-    margin-bottom: -30px ;
+    margin-bottom: -30px;
     &__image {
       width: 100%;
     }
     &__content {
       display: flex;
       font-size: 21px;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding: 20px 0px 20px 0px;
 
       &__title {
         font-size: 30px;
         font-family: "shrikhand";
-        padding: 0px 44px 0px 0px;
+        padding: 0px 44px 0px 20px;
       }
-      &__heart {
-        position: relative;
-        height: 21px;
+      &__heart {
+        margin: 0 20px 0 0;
       }
     }
   }
@@ -35,11 +32,11 @@
   height: 21px;
   cursor: pointer;
   &:hover .fa-heart-animated {
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 
-/* RESPONSIVE */ 
+/* RESPONSIVE */
 
 @media (min-width: 1025px) {
   .main {

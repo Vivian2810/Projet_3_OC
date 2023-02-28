@@ -11,72 +11,68 @@
   &__element {
     border-radius: 10px;
     background-color: white;
+    margin: 0 0 0 20px;
     width: 92%;
-    display: block;
-    margin-left: auto; /*centré*/
-    margin-right: auto;
     margin-top: 12px;
     box-shadow: 0 5px 16px #0000002e;
-    position: relative;
-    animation-duration: 1s;
-    animation-name: appear;
-    transform: scale(0);
-    animation-fill-mode: both;
   }
 
   &__contents {
     display: flex;
+    justify-content: space-between;
     &:hover .box__check {
       color: white;
-      width: 40px;
+      margin-right: 0;
       border-radius: 0px 10px 10px 0px;
       i {
         transform: rotate(0deg);
       }
     }
-    &:hover .box__contents__left {
-      width: calc(100% + 40px);
-      // position: relative;
-    }
-    &:hover .box__contents__price {
-      right: 12%;
-    }
     &__left {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 10px 0px 10px 10px;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
     }
     &__inline {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       &__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         padding: 5px 0px 0px 10px;
         font-weight: 800;
         font-size: large;
         margin: 2px 0 2px 0;
       }
       &__subtitle {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         padding: 5px 0px 0px 10px;
         margin: 2px 0 5px 0;
       }
     }
+    &__right {
+      display: flex;
+      text-align: end;
+      overflow: hidden;
+      z-index: 1;
+    }
     &__price {
-      position: absolute;
-      right: 5%;
+      margin: 45px 20px 0px 20px;
       transition: all 0.3s ease;
     }
-  }
-  
-  .box__check {
-    position: absolute;
-    z-index: 1;
   }
 
   &__check {
     height: 100%;
-    right: 0px;
-    top: 0;
-    width: 0px;
+    width: 70px;
+    margin-right: -70px;
     background: #99e2d0;
     display: flex;
     justify-content: center;
@@ -84,6 +80,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
     i {
+      font-size: 20px;
       color: white;
       transform: rotate(-180deg);
       transition: all 0.3s ease;
@@ -92,19 +89,6 @@
 }
 
 /*page de détail*/
-@media (min-width: 450px) and (max-width: 767px) {
-  .box {
-    &__menu {
-      &__title {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    &__element {
-      width: 350px;
-    }
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .box {

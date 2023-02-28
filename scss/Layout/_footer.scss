@@ -1,4 +1,5 @@
 .footer {
+  text-align: left;
   background-color: $color_subheader;
   padding: 18px 0px 18px 24px;
   a {
@@ -25,15 +26,6 @@
 }
 
 /* RESPONSIVE */
-
-@media (min-width: 450px) and (max-width : 1600px){
-  .footer{
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 @media (min-width: 1601px){
   .footer{

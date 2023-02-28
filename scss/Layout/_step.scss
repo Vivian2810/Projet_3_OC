@@ -4,30 +4,38 @@
   justify-content: center;
   text-align: center;
   box-shadow: 0 5px 16px #0000002e;
-  width: 300px;
-  margin: 20px 0;
+  width: 90%;
+  margin: 20px 20px;
   border-radius: 16px;
   padding: 10px 0;
-
+  &:hover {
+    background-color: $step_hover;
+    .step__icon {
+      color: $primary;
+    }
+  }
   &__number {
     padding: 5px 9px;
     color: white;
-    background-color: #9356dc;
+    background-color: $primary;
     border-radius: 50%;
     margin-left: -14px;
     height: 17px;
   }
   &__icon {
-    color: GREY;
+    color: $subtitle;
     font-size: 16px;
     display: flex;
-    justify-content: end;
+    margin-left: 20px;
+    justify-content: start;
     align-items: center;
     flex-grow: 1;
+
   }
   &__text {
     font-weight: 600;
     font-size: 14px;
     flex-grow: 2;
+    text-align: left;
   }
 }
