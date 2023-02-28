@@ -12,3 +12,11 @@
     background-color: $back_section;
   }
 }
+
+@media (min-width: 768px) {
+  .section {
+    &--fonctionnement{
+      align-items: center;
+    }
+  }
+}

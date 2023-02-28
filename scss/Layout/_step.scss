@@ -39,3 +39,9 @@
     text-align: left;
   }
 }
+
+@media (min-width: 768px) {
+  .step {
+    width: 400px;
+  }
+}
