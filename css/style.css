@@ -221,6 +221,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .section {
+    padding-left: 0;
+  }
+  .section--restaurants {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
   .section--fonctionnement {
     align-items: center;
   }
